@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-insist-blue: var(--insist-blue);
+  --color-insist-blue-light: var(--insist-blue-light);
+  --color-insist-emerald: var(--insist-emerald);
+  --color-insist-emerald-light: var(--insist-emerald-light);
+  --color-insist-gray-50: var(--insist-gray-50);
+  --color-insist-gray-100: var(--insist-gray-100);
+  --color-insist-gray-200: var(--insist-gray-200);
+  --color-insist-gray-400: var(--insist-gray-400);
+  --color-insist-gray-600: var(--insist-gray-600);
+  --color-insist-gray-900: var(--insist-gray-900);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* INSIST palette */
+  --insist-blue: oklch(0.32 0.08 250);
+  --insist-blue-light: oklch(0.42 0.1 250);
+  --insist-emerald: oklch(0.55 0.14 165);
+  --insist-emerald-light: oklch(0.65 0.12 165);
+  --insist-gray-50: oklch(0.985 0.002 250);
+  --insist-gray-100: oklch(0.965 0.004 250);
+  --insist-gray-200: oklch(0.92 0.006 250);
+  --insist-gray-400: oklch(0.68 0.01 250);
+  --insist-gray-600: oklch(0.48 0.015 250);
+  --insist-gray-900: oklch(0.22 0.02 250);
+
+  --background: oklch(1 0 0);
+  --foreground: var(--insist-gray-900);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--insist-gray-900);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--insist-gray-900);
+  --primary: var(--insist-blue);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: var(--insist-emerald);
+  --secondary-foreground: oklch(0.99 0 0);
+  --muted: var(--insist-gray-100);
+  --muted-foreground: var(--insist-gray-600);
+  --accent: var(--insist-gray-50);
+  --accent-foreground: var(--insist-gray-900);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: var(--insist-gray-200);
+  --input: var(--insist-gray-200);
+  --ring: var(--insist-blue);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  ::selection {
+    background-color: oklch(0.55 0.14 165 / 0.2);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
