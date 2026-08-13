@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
   description:
     "INSIST is a research community at Universitas Sriwijaya advancing intelligent and sustainable information systems through rigorous scholarship, interdisciplinary collaboration, and real-world impact.",
   university: "Universitas Sriwijaya",
-  email: "insist@unsri.ac.id",
+  email: "info@insistresearch.org",
   address: "Fakultas Ilmu Komputer, Universitas Sriwijaya, Palembang, Indonesia",
   social: {
     github: "https://github.com/insist-unsri",
