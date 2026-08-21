@@ -21,11 +21,12 @@ export const siteConfig: SiteConfig = {
   email: "insist@unsri.ac.id",
   address: "Fakultas Ilmu Komputer, Universitas Sriwijaya, Palembang, Indonesia",
   logo: {
-    src: "/images/logo_insist.png",
+    src: "/images/logo_insist1.png",
     alt: "INSIST — Intelligent and Sustainable Information Systems",
     width: 1025,
     height: 1024,
     showWordmark: false,
+    className: "h-16 w-auto sm:h-[4.5rem]",
   },
   social: {
     github: "https://github.com/insist-unsri",

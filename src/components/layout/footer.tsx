@@ -14,7 +14,7 @@ export function Footer() {
       <Container className="py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Logo imageClassName="h-11 sm:h-12" />
+            <Logo imageClassName="h-16 sm:h-20" />
             <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
               {siteConfig.fullName} at {siteConfig.university}. Advancing
               intelligent and sustainable information systems through research,

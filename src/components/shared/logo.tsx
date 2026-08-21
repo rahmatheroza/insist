@@ -29,9 +29,9 @@ export function Logo({
         width={logo.width}
         height={logo.height}
         className={cn(
-          showWordmark
-            ? "h-8 w-auto object-contain"
-            : "h-10 w-auto object-contain sm:h-11",
+          "w-auto object-contain",
+          logo.className ??
+            (showWordmark ? "h-8" : "h-16 sm:h-[4.5rem]"),
           imageClassName
         )}
         priority

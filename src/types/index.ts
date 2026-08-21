@@ -62,6 +62,8 @@ export interface SiteLogo {
   height: number;
   /** Set false if the image already includes the INSIST wordmark */
   showWordmark?: boolean;
+  /** Tailwind classes controlling on-screen logo size */
+  className?: string;
 }
 
 export interface SiteConfig {
