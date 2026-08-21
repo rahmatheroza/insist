@@ -54,6 +54,16 @@ export interface Project {
   tags: string[];
 }
 
+export interface SiteLogo {
+  /** Path under /public, e.g. "/images/logo.png" */
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  /** Set false if the image already includes the INSIST wordmark */
+  showWordmark?: boolean;
+}
+
 export interface SiteConfig {
   name: string;
   fullName: string;
@@ -62,6 +72,7 @@ export interface SiteConfig {
   university: string;
   email: string;
   address: string;
+  logo: SiteLogo;
   social: {
     github?: string;
     linkedin?: string;

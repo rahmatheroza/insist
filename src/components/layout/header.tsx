@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+import { Logo } from "@/components/shared/logo";
 import { Button } from "@/components/ui/button";
-import { navItems, siteConfig } from "@/content/site";
+import { navItems } from "@/content/site";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -16,19 +17,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="group flex items-center gap-2.5">
-          <span className="flex size-8 items-center justify-center rounded-md bg-primary text-sm font-bold text-primary-foreground">
-            I
-          </span>
-          <div className="flex flex-col">
-            <span className="text-sm font-bold tracking-tight text-foreground">
-              {siteConfig.name}
-            </span>
-            <span className="hidden text-[10px] leading-none text-muted-foreground sm:block">
-              {siteConfig.university}
-            </span>
-          </div>
-        </Link>
+        <Logo />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {navItems.map((item) => (

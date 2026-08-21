@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Github, GraduationCap, Linkedin, Mail, MapPin } from "lucide-react";
 
 import { Container } from "@/components/shared/container";
+import { Logo } from "@/components/shared/logo";
 import { Separator } from "@/components/ui/separator";
 import { navItems, siteConfig } from "@/content/site";
 
@@ -13,14 +14,7 @@ export function Footer() {
       <Container className="py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2.5">
-              <span className="flex size-8 items-center justify-center rounded-md bg-primary text-sm font-bold text-primary-foreground">
-                I
-              </span>
-              <span className="text-sm font-bold tracking-tight">
-                {siteConfig.name}
-              </span>
-            </Link>
+            <Logo imageClassName="h-11 sm:h-12" />
             <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
               {siteConfig.fullName} at {siteConfig.university}. Advancing
               intelligent and sustainable information systems through research,
