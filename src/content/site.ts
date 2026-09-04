@@ -256,6 +256,7 @@ export const people: Person[] = [
     name: "Dr. Ahmad Rahman, S.Kom., M.Kom.",
     role: "Head of Research Group",
     affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/person-1.svg",
     researchInterests: [
       "Sustainable Information Systems",
       "IS Design Science",

@@ -42,8 +42,9 @@ export interface Person {
   name: string;
   role: string;
   affiliation: string;
-  researchInterests?: string[];
+  /** Path under /public, e.g. "/images/people/jane-doe.jpg" */
   image?: string;
+  researchInterests?: string[];
 }
 
 export interface Project {
