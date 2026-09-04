@@ -256,7 +256,7 @@ export const people: Person[] = [
     name: "Dr. Ari Wedhasmara",
     role: "Head of Research Group",
     affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
-    image: "/images/people/ari-wedhasmara.jpeg",
+    image: "/images/people/ari-wedhasmara.png",
     researchInterests: [
       "Digital Goverment & Public Sector Information Systems",
       "Citizen-Government Engagement & Social Media",
