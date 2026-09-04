@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { Container } from "@/components/shared/container";
 import { SectionHeader } from "@/components/shared/section-header";
-import { aboutContent } from "@/content/site";
+import { aboutContent } from "@/content/about";
 import type { SectionProps } from "@/types";
 
 export function AboutSection({ className }: SectionProps) {

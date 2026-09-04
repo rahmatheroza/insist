@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { Container } from "@/components/shared/container";
 import { SectionHeader } from "@/components/shared/section-header";
-import { communityContent } from "@/content/site";
+import { communityContent } from "@/content/home/community";
 import type { SectionProps } from "@/types";
 
 export function CommunitySection({ className }: SectionProps) {

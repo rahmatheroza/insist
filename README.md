@@ -46,7 +46,25 @@ src/
 
 ## Content Management
 
-All site content lives in `src/content/site.ts` with typed interfaces in `src/types/`. This structure is designed for future migration to Markdown or a headless CMS.
+Content is organized by section under `src/content/`:
+
+```
+src/content/
+├── site.ts           → Global config (name, logo, email, nav)
+├── home/             → Homepage-only sections
+│   ├── hero.ts
+│   ├── impact.ts
+│   └── community.ts
+├── about.ts
+├── research.ts
+├── news.ts
+├── join.ts
+├── people.ts
+├── projects.ts
+└── publications.ts
+```
+
+Each file exports typed data matching interfaces in `src/types/`. This structure is designed for future migration to Markdown or a headless CMS.
 
 ## Scripts
 

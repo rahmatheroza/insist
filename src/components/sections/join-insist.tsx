@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
-import { joinContent } from "@/content/site";
+import { joinContent } from "@/content/join";
 import type { SectionProps } from "@/types";
 
 export function JoinSection({ className }: SectionProps) {

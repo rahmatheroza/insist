@@ -4,7 +4,8 @@ import { User } from "lucide-react";
 
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
-import { people, siteConfig } from "@/content/site";
+import { people } from "@/content/people";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "People",

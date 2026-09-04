@@ -5,7 +5,8 @@ import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
 import { Button } from "@/components/ui/button";
-import { joinContent, siteConfig } from "@/content/site";
+import { joinContent } from "@/content/join";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Join",

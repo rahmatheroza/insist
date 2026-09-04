@@ -6,7 +6,7 @@ import { Container } from "@/components/shared/container";
 import { LinkArrow } from "@/components/shared/link-arrow";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Badge } from "@/components/ui/badge";
-import { featuredPublications } from "@/content/site";
+import { featuredPublications } from "@/content/publications";
 import type { SectionProps } from "@/types";
 
 const typeLabels = {

@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/shared/container";
 import { LinkArrow } from "@/components/shared/link-arrow";
 import { SectionHeader } from "@/components/shared/section-header";
-import { researchThemes } from "@/content/site";
+import { researchThemes } from "@/content/research";
 import type { SectionProps } from "@/types";
 
 const iconMap: Record<string, LucideIcon> = {

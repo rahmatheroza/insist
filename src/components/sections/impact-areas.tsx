@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { Container } from "@/components/shared/container";
 import { SectionHeader } from "@/components/shared/section-header";
-import { impactAreas } from "@/content/site";
+import { impactAreas } from "@/content/home/impact";
 import type { SectionProps } from "@/types";
 
 export function ImpactAreasSection({ className }: SectionProps) {

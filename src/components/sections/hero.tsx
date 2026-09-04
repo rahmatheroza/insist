@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
-import { heroContent, siteConfig } from "@/content/site";
+import { heroContent } from "@/content/home/hero";
+import { siteConfig } from "@/content/site";
 
 export function HeroSection() {
   return (

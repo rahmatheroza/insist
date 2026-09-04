@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
 import { Badge } from "@/components/ui/badge";
-import { featuredPublications, siteConfig } from "@/content/site";
+import { publications } from "@/content/publications";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Publications",
@@ -25,7 +26,7 @@ export default function PublicationsPage() {
       />
       <Container className="py-16 lg:py-24">
         <div className="mx-auto max-w-3xl space-y-6">
-          {featuredPublications.map((pub) => (
+          {publications.map((pub) => (
             <article
               key={pub.id}
               className="rounded-lg border border-border p-6"

@@ -7,7 +7,7 @@ import { Container } from "@/components/shared/container";
 import { LinkArrow } from "@/components/shared/link-arrow";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Badge } from "@/components/ui/badge";
-import { latestNews } from "@/content/site";
+import { latestNews } from "@/content/news";
 import type { SectionProps } from "@/types";
 
 const categoryLabels = {

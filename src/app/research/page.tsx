@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
-import { researchThemes, siteConfig } from "@/content/site";
+import { researchThemes } from "@/content/research";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Research",

@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
 import { Badge } from "@/components/ui/badge";
-import { projects, siteConfig } from "@/content/site";
+import { projects } from "@/content/projects";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Projects",

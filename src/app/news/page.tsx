@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
 import { Badge } from "@/components/ui/badge";
-import { latestNews, siteConfig } from "@/content/site";
+import { news } from "@/content/news";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "News",
@@ -35,7 +36,7 @@ export default function NewsPage() {
       />
       <Container className="py-16 lg:py-24">
         <div className="mx-auto max-w-3xl space-y-6">
-          {latestNews.map((item) => (
+          {news.map((item) => (
             <article
               key={item.id}
               className="rounded-lg border border-border p-6"
