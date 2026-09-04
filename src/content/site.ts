@@ -257,6 +257,8 @@ export const people: Person[] = [
     role: "Head of Research Group",
     affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
     image: "/images/people/ari-wedhasmara.png",
+    imageWidth: 1073,
+    imageHeight: 1465,
     researchInterests: [
       "Digital Goverment & Public Sector Information Systems",
       "Citizen-Government Engagement & Social Media",

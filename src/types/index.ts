@@ -44,6 +44,10 @@ export interface Person {
   affiliation: string;
   /** Path under /public, e.g. "/images/people/jane-doe.jpg" */
   image?: string;
+  /** Original image width in pixels (required for portrait photos) */
+  imageWidth?: number;
+  /** Original image height in pixels (required for portrait photos) */
+  imageHeight?: number;
   researchInterests?: string[];
 }
 
