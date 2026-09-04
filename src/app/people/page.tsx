@@ -25,18 +25,17 @@ export default function PeoplePage() {
               key={person.id}
               className="overflow-hidden rounded-lg border border-border"
             >
-              <div className="bg-insist-gray-100">
+              <div className="relative aspect-[4/3] bg-insist-gray-100">
                 {person.image ? (
                   <Image
                     src={person.image}
                     alt={`${person.name} profile photo`}
-                    width={person.imageWidth ?? 400}
-                    height={person.imageHeight ?? 533}
-                    className="h-auto w-full"
+                    fill
+                    className="object-cover object-top"
                     sizes="(max-width: 640px) 100vw, 400px"
                   />
                 ) : (
-                  <div className="flex aspect-[3/4] items-center justify-center text-muted-foreground">
+                  <div className="flex h-full items-center justify-center text-muted-foreground">
                     <User className="size-16 stroke-1" aria-hidden />
                   </div>
                 )}
