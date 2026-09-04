@@ -253,14 +253,15 @@ export const joinContent: JoinContent = {
 export const people: Person[] = [
   {
     id: "person-1",
-    name: "Dr. Ahmad Rahman, S.Kom., M.Kom.",
+    name: "Dr. Ari Wedhasmara",
     role: "Head of Research Group",
     affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
-    image: "/images/people/person-1.svg",
+    image: "/images/people/ari-wedhasmara.jpeg",
     researchInterests: [
-      "Sustainable Information Systems",
-      "IS Design Science",
-      "Digital Transformation",
+      "Digital Goverment & Public Sector Information Systems",
+      "Citizen-Government Engagement & Social Media",
+      "AI for Goverment",
+      "Intelligent Digital Public Value Creation"
     ],
   },
 ];
