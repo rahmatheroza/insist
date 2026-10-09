@@ -24,7 +24,10 @@ export default function ContactPage() {
               Get in Touch
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              test
+              We welcome inquiries from prospective students, visiting
+              researchers, industry partners, and media. Please include relevant
+              details about your interest so we can direct your message
+              appropriately.
             </p>
 
             <dl className="mt-8 space-y-6">
