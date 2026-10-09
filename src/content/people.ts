@@ -14,4 +14,58 @@ export const people: Person[] = [
       "Intelligent Digital Public Value Creation",
     ],
   },
+  {
+    id: "person-2",
+    name: "Mira Afrina, Ph.D.",
+    role: "Researcher",
+    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/Mira-Afrina.jpeg",
+    researchInterests: [
+      "Information System Adoption and E-Commerce",
+    ],
+  },
+  {
+    id: "person-3",
+    name: "Rizka Dhini Kurnia, Ph.D.",
+    role: "Researcher",
+    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/Rizka-Dhini-Kurnia.jpeg",
+    researchInterests: [
+      "E-commerce and Digital Marketing",
+      "Digital Transformation and Innovation",
+      "Social Media Studies",
+    ],
+  },
+  {
+    id: "person-4",
+    name: "Al Farissi, Ph.D.",
+    role: "Researcher",
+    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/Al-Farissi.jpeg",
+    researchInterests: [
+      "Intelligence System",
+    ],
+  },
+  {
+    id: "person-5",
+    name: "Apriansyah Putra, M.Comp.",
+    role: "Researcher",
+    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/Apriansyah-Putra.jpeg",
+    researchInterests: [
+      "Human-Centered Digital Services & E-Participation",
+      "Computational Sentiment Analysis for Policy Evaluation",
+    ],
+  },
+  {
+    id: "person-6",
+    name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
+    role: "Senior Researcher",
+    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
+    researchInterests: [
+      "Information Systems Adoption",
+      "E-commerce, and E-learning",
+    ],
+  },
 ];
