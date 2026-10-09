@@ -15,6 +15,17 @@ export const people: Person[] = [
     ],
   },
   {
+    id: "person-6",
+    name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
+    role: "Senior Researcher",
+    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
+    image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
+    researchInterests: [
+      "Information Systems Adoption",
+      "E-commerce, and E-learning",
+    ],
+  },
+  {
     id: "person-2",
     name: "Mira Afrina, Ph.D.",
     role: "Researcher",
@@ -55,17 +66,6 @@ export const people: Person[] = [
     researchInterests: [
       "Human-Centered Digital Services & E-Participation",
       "Computational Sentiment Analysis for Policy Evaluation",
-    ],
-  },
-  {
-    id: "person-6",
-    name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
-    role: "Senior Researcher",
-    affiliation: "Faculty of Computer Science, Universitas Sriwijaya",
-    image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
-    researchInterests: [
-      "Information Systems Adoption",
-      "E-commerce, and E-learning",
     ],
   },
 ];

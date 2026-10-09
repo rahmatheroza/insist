@@ -20,7 +20,7 @@ export default function PeoplePage() {
         description="Faculty researchers, graduate students, and alumni who form the INSIST research community."
       />
       <Container className="py-16 lg:py-24">
-        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-3">
           {people.map((person) => (
             <article
               key={person.id}
@@ -41,32 +41,32 @@ export default function PeoplePage() {
                   </div>
                 )}
               </div>
-              <div className="p-6">
-                <h2 className="text-lg font-semibold text-foreground">
+              <div className="p-4 pt-3">
+                <h2 className="text-base font-semibold leading-snug text-foreground">
                   {person.name}
                 </h2>
-                <p className="mt-1 text-sm font-medium text-primary">
+                <span className="mt-1.5 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">
                   {person.role}
-                </p>
-                <p className="mt-2 text-sm text-muted-foreground">
+                </span>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                   {person.affiliation}
                 </p>
                 {person.researchInterests &&
                   person.researchInterests.length > 0 && (
-                    <div className="mt-4">
-                      <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                    <div className="mt-3 border-t border-border pt-3">
+                      <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60">
                         Research Interests
                       </p>
-                      <ul className="mt-2 space-y-1">
+                      <div className="flex flex-wrap gap-1.5">
                         {person.researchInterests.map((interest) => (
-                          <li
+                          <span
                             key={interest}
-                            className="text-sm text-muted-foreground"
+                            className="rounded-md border border-border bg-muted px-2 py-0.5 text-[11px] leading-relaxed text-muted-foreground"
                           >
                             {interest}
-                          </li>
+                          </span>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   )}
               </div>
