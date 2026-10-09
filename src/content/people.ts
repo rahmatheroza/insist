@@ -61,7 +61,7 @@ export const people: Person[] = [
     id: "person-6",
     name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
     role: "Senior Researcher",
-    affiliation: "Universitas Teknologi Malaysia",
+    affiliation: "Faculty of Computing, Universiti Teknologi Malaysia",
     image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
     researchInterests: [
       "Information Systems Adoption",
