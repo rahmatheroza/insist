@@ -1,9 +1,8 @@
 import type { MetadataRoute } from "next";
 
-import { siteConfig } from "@/content/site";
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://insist.unsri.ac.id";
+  const locales = ["en", "id"];
 
   const routes = [
     "",
@@ -17,10 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
   ];
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === "" || route === "/news" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.8,
-  }));
+  return locales.flatMap((locale) =>
+    routes.map((route) => ({
+      url: `${baseUrl}/${locale}${route}`,
+      lastModified: new Date(),
+      changeFrequency: route === "" || route === "/news" ? "weekly" : "monthly",
+      priority: route === "" ? 1 : 0.8,
+    }))
+  );
 }

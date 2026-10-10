@@ -1,14 +1,19 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 
+import { Link } from "@/i18n/routing";
 import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
-import { heroContent } from "@/content/home/hero";
-import { siteConfig } from "@/content/site";
+import { getHeroContent } from "@/content/home/hero";
+import { getSiteConfig } from "@/content/site";
 
 export function HeroSection() {
+  const locale = useLocale();
+  const heroContent = getHeroContent(locale);
+  const siteConfig = getSiteConfig(locale);
+
   return (
     <section className="relative overflow-hidden border-b border-border">
       <Container as="section" className="py-24 sm:py-32 lg:py-40">

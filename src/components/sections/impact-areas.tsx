@@ -1,13 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Container } from "@/components/shared/container";
 import { SectionHeader } from "@/components/shared/section-header";
-import { impactAreas } from "@/content/home/impact";
+import { getImpactAreas } from "@/content/home/impact";
 import type { SectionProps } from "@/types";
 
 export function ImpactAreasSection({ className }: SectionProps) {
+  const locale = useLocale();
+  const t = useTranslations("home.impactAreas");
+  const impactAreas = getImpactAreas(locale);
+
   return (
     <section
       className={`bg-insist-gray-50 ${className ?? ""}`}
@@ -15,8 +20,8 @@ export function ImpactAreasSection({ className }: SectionProps) {
     >
       <Container as="section" className="py-24 lg:py-32">
         <SectionHeader
-          title="Impact Areas"
-          subtitle="Our research extends beyond publications — it shapes practice, policy, and communities."
+          title={t("title")}
+          subtitle={t("subtitle")}
           align="center"
           className="mx-auto"
         />

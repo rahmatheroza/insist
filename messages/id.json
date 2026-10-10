@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "about": "Tentang",
+    "research": "Riset",
+    "people": "Anggota",
+    "projects": "Proyek",
+    "publications": "Publikasi",
+    "news": "Berita",
+    "join": "Bergabung",
+    "contact": "Kontak",
+    "joinUs": "Bergabung"
+  },
+  "site": {
+    "name": "INSIST",
+    "fullName": "Kelompok Riset Sistem Informasi Cerdas dan Berkelanjutan",
+    "tagline": "Riset Sistem Informasi Berdampak Nyata",
+    "description": "INSIST adalah komunitas riset di Universitas Sriwijaya yang memajukan sistem informasi cerdas dan berkelanjutan melalui keilmuan mendalam, kolaborasi interdisipliner, dan dampak nyata.",
+    "university": "Universitas Sriwijaya",
+    "address": "Fakultas Ilmu Komputer, Universitas Sriwijaya, Palembang, Indonesia",
+    "copyright": "Hak cipta dilindungi undang-undang.",
+    "motto": "Dibangun dengan ketelitian. Dirancang untuk dampak nyata."
+  },
+  "common": {
+    "readMore": "Baca selengkapnya",
+    "viewAll": "Lihat semua",
+    "contactUs": "Hubungi kami",
+    "comingSoon": "Segera hadir",
+    "navigate": "Navigasi",
+    "connect": "Terhubung"
+  },
+  "home": {
+    "hero": {
+      "headline": "Sistem Informasi Cerdas & Berkelanjutan",
+      "subheadline": "Riset bermakna bagi masyarakat, industri, dan lingkungan.",
+      "description": "Kami merancang, menganalisis, dan menerapkan sistem informasi yang cerdas secara desain dan berkelanjutan secara prinsip — menjembatani ketelitian akademis dengan dampak praktis di bidang kesehatan, pendidikan, tata kelola, dan industri.",
+      "exploreResearch": "Jelajahi Riset Kami",
+      "joinCommunity": "Bergabung dengan Komunitas"
+    },
+    "about": {
+      "title": "Tentang INSIST",
+      "subtitle": "Komunitas riset yang berlandaskan rasa ingin tahu, kolaborasi, dan dampak berkelanjutan."
+    },
+    "researchThemes": {
+      "title": "Tema Riset",
+      "subtitle": "Enam bidang riset yang saling terhubung untuk menghasilkan kajian mendalam dan berorientasi dampak.",
+      "viewAll": "Lihat semua riset"
+    },
+    "impactAreas": {
+      "title": "Dampak & Keterlibatan",
+      "subtitle": "Bagaimana riset kami mewujud menjadi hasil terukur bagi masyarakat, industri, dan akademisi."
+    },
+    "publications": {
+      "title": "Publikasi Pilihan",
+      "subtitle": "Karya ilmiah terkini dari para peneliti INSIST di berbagai forum terkemuka.",
+      "viewAll": "Semua publikasi"
+    },
+    "news": {
+      "title": "Berita & Kabar Terkini",
+      "subtitle": "Aktivitas terbaru, pencapaian, dan pengumuman dari komunitas riset kami.",
+      "viewAll": "Semua berita"
+    },
+    "community": {
+      "title": "Komunitas Kami",
+      "subtitle": "INSIST menyatukan dosen peneliti, mahasiswa pascasarjana, dan alumni yang memiliki komitmen pada riset sistem informasi yang ketat dan berdampak nyata. Kami membangun budaya terbuka dan kolaboratif di mana gagasan diuji, disempurnakan, dan dibagikan."
+    },
+    "join": {
+      "title": "Bergabung dengan Komunitas Riset Kami",
+      "subtitle": "Kami selalu terbuka bagi para peneliti, mahasiswa pascasarjana, dan mitra industri yang ingin berkolaborasi dalam riset sistem informasi terkini.",
+      "exploreOpportunities": "Jelajahi Peluang",
+      "getInTouch": "Hubungi Kami"
+    }
+  },
+  "aboutPage": {
+    "title": "Tentang INSIST",
+    "subtitle": "Komunitas riset yang berlandaskan rasa ingin tahu, kolaborasi, dan dampak berkelanjutan.",
+    "comingSoon": "Konten halaman tentang kami selengkapnya segera hadir."
+  },
+  "researchPage": {
+    "title": "Riset",
+    "description": "Riset kami mencakup sistem cerdas, sistem informasi berkelanjutan, informatika kesehatan digital, dan lainnya — disatukan oleh komitmen terhadap ketelitian dan dampak nyata.",
+    "comingSoon": "Halaman riset dan daftar proyek terperinci segera hadir."
+  },
+  "peoplePage": {
+    "title": "Anggota",
+    "description": "Dosen peneliti, mahasiswa pascasarjana, dan alumni yang membentuk komunitas riset INSIST.",
+    "researchInterests": "Bidang Minat Riset"
+  },
+  "projectsPage": {
+    "title": "Proyek",
+    "description": "Proyek riset terapan dan fundamental di bidang informatika kesehatan, green IT, infrastruktur cerdas, dan sistem enterprise.",
+    "status": {
+      "active": "Aktif",
+      "ongoing": "Sedang Berjalan",
+      "completed": "Selesai"
+    }
+  },
+  "publicationsPage": {
+    "title": "Publikasi",
+    "description": "Artikel jurnal peer-reviewed, makalah konferensi, dan book chapter dari para peneliti INSIST.",
+    "types": {
+      "journal": "Jurnal",
+      "conference": "Konferensi",
+      "bookChapter": "Book Chapter"
+    },
+    "comingSoon": "Basis data publikasi lengkap dengan fitur filter dan ekspor BibTeX segera hadir."
+  },
+  "newsPage": {
+    "title": "Berita",
+    "description": "Kegiatan, kolaborasi, prestasi, dan pengumuman dari komunitas INSIST.",
+    "categories": {
+      "announcement": "Pengumuman",
+      "event": "Kegiatan",
+      "achievement": "Prestasi",
+      "publication": "Publikasi"
+    },
+    "comingSoon": "Artikel berita individu dan arsip akan segera ditambahkan."
+  },
+  "joinPage": {
+    "title": "Bergabung dengan INSIST",
+    "description": "Baik Anda calon mahasiswa pascasarjana, peneliti tamu, maupun mitra industri — kami menyambut kolaborator yang memiliki visi yang sama untuk sistem informasi yang cerdas dan berkelanjutan.",
+    "ctaTitle": "Siap untuk berkolaborasi?",
+    "ctaDesc": "Kirimkan email berisi minat riset, CV, dan jenis kolaborasi yang Anda minati. Dosen kami meninjau pengajuan secara berkala.",
+    "ctaBtn": "Hubungi INSIST"
+  },
+  "contactPage": {
+    "title": "Kontak",
+    "description": "Hubungi kami untuk kolaborasi riset, informasi program pascasarjana, pertanyaan media, atau informasi umum.",
+    "getInTouch": "Hubungi Kami",
+    "emailLabel": "Email",
+    "addressLabel": "Alamat",
+    "formTitle": "Formulir Kontak",
+    "formDesc": "Formulir kontak interaktif akan segera diintegrasikan. Untuk saat ini, silakan hubungi kami langsung melalui email di"
+  }
+}

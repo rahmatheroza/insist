@@ -10,11 +10,12 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Container } from "@/components/shared/container";
 import { LinkArrow } from "@/components/shared/link-arrow";
 import { SectionHeader } from "@/components/shared/section-header";
-import { researchThemes } from "@/content/research";
+import { getResearchThemes } from "@/content/research";
 import type { SectionProps } from "@/types";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -27,17 +28,21 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export function ResearchThemesSection({ className }: SectionProps) {
+  const locale = useLocale();
+  const t = useTranslations("home.researchThemes");
+  const researchThemes = getResearchThemes(locale);
+
   return (
     <section className={className} id="research-themes">
       <Container as="section" className="py-24 lg:py-32">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeader
-            title="Research Themes"
-            subtitle="Six interconnected areas where we pursue rigorous, impact-oriented inquiry."
+            title={t("title")}
+            subtitle={t("subtitle")}
             className="mb-0"
           />
           <LinkArrow href="/research" className="shrink-0 pb-1">
-            View all research
+            {t("viewAll")}
           </LinkArrow>
         </div>
 

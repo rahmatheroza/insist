@@ -1,14 +1,9 @@
 import type { NavItem, SiteConfig } from "@/types";
 
-export const siteConfig: SiteConfig = {
+const baseSite = {
   name: "INSIST",
-  fullName: "Intelligent and Sustainable Information Systems Research Group",
-  tagline: "Impact-driven Information Systems Research",
-  description:
-    "INSIST is a research community at Universitas Sriwijaya advancing intelligent and sustainable information systems through rigorous scholarship, interdisciplinary collaboration, and real-world impact.",
   university: "Universitas Sriwijaya",
   email: "insistreserch@unsri.ac.id",
-  address: "Fakultas Ilmu Komputer, Universitas Sriwijaya, Palembang, Indonesia",
   logo: {
     src: "/images/logo_insist1.png",
     alt: "INSIST — Intelligent and Sustainable Information Systems",
@@ -25,7 +20,29 @@ export const siteConfig: SiteConfig = {
   },
 };
 
-export const navItems: NavItem[] = [
+const siteConfigEn: SiteConfig = {
+  ...baseSite,
+  fullName: "Intelligent and Sustainable Information Systems Research Group",
+  tagline: "Impact-driven Information Systems Research",
+  description:
+    "INSIST is a research community at Universitas Sriwijaya advancing intelligent and sustainable information systems through rigorous scholarship, interdisciplinary collaboration, and real-world impact.",
+  address: "Faculty of Computer Science, Universitas Sriwijaya, Palembang, Indonesia",
+};
+
+const siteConfigId: SiteConfig = {
+  ...baseSite,
+  fullName: "Kelompok Riset Sistem Informasi Cerdas dan Berkelanjutan",
+  tagline: "Riset Sistem Informasi Berdampak Nyata",
+  description:
+    "INSIST adalah komunitas riset di Universitas Sriwijaya yang memajukan sistem informasi cerdas dan berkelanjutan melalui keilmuan mendalam, kolaborasi interdisipliner, dan dampak nyata.",
+  address: "Fakultas Ilmu Komputer, Universitas Sriwijaya, Palembang, Indonesia",
+};
+
+export function getSiteConfig(locale?: string): SiteConfig {
+  return locale === "id" ? siteConfigId : siteConfigEn;
+}
+
+const navItemsEn: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Research", href: "/research" },
   { label: "People", href: "/people" },
@@ -35,3 +52,21 @@ export const navItems: NavItem[] = [
   { label: "Join", href: "/join" },
   { label: "Contact", href: "/contact" },
 ];
+
+const navItemsId: NavItem[] = [
+  { label: "Tentang", href: "/about" },
+  { label: "Riset", href: "/research" },
+  { label: "Anggota", href: "/people" },
+  { label: "Proyek", href: "/projects" },
+  { label: "Publikasi", href: "/publications" },
+  { label: "Berita", href: "/news" },
+  { label: "Bergabung", href: "/join" },
+  { label: "Kontak", href: "/contact" },
+];
+
+export function getNavItems(locale?: string): NavItem[] {
+  return locale === "id" ? navItemsId : navItemsEn;
+}
+
+export const siteConfig: SiteConfig = siteConfigEn;
+export const navItems: NavItem[] = navItemsEn;
