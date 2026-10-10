@@ -27,14 +27,16 @@ export async function generateMetadata({
 
 const roleSectionsEn = [
   { role: "Head of Research Group", title: "Head of Research Group" },
-  { role: "Senior Researcher", title: "Senior Researchers" },
+  { role: "Advisor Researcher", title: "Advisor Researchers" },
   { role: "Researcher", title: "Researchers" },
+  { role: "Collaborator Researcher", title: "Collaborator Researchers" },
 ];
 
 const roleSectionsId = [
   { role: "Head of Research Group", title: "Ketua Kelompok Riset" },
-  { role: "Senior Researcher", title: "Peneliti Senior" },
+  { role: "Peneliti Penasihat", title: "Peneliti Penasihat" },
   { role: "Researcher", title: "Peneliti" },
+  { role: "Kolaborator Peneliti", title: "Kolaborator Peneliti" },
 ];
 
 function PersonCard({

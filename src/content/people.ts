@@ -60,7 +60,7 @@ const peopleEn: Person[] = [
   {
     id: "person-6",
     name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
-    role: "Senior Researcher",
+    role: "Advisor Researcher",
     affiliation: "Faculty of Computing, Universiti Teknologi Malaysia",
     image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
     researchInterests: [
@@ -103,6 +103,30 @@ const peopleEn: Person[] = [
     researchInterests: [
       "Knowledge Management",
       "Business Intelligence",
+    ],
+  },
+  {
+    id: "person-10",
+    name: "Bayu Adhi Tama, Ph.D.",
+    role: "Advisor Researcher",
+    affiliation: "University of Maryland Baltimore County",
+    image: "/images/people/Bayu-Adhi-Tama.jpeg",
+    researchInterests: [
+      "Applied Data Mining",
+      "Data Science",
+    ],
+  },
+  {
+    id: "person-11",
+    name: "Lovinta Happy Atrinawati, M.Eng.",
+    role: "Collaborator Researcher",
+    affiliation: "Ph.D. Candidate at Florida State University",
+    image: "/images/people/Lovinta-Happy-Atrinawati.jpeg",
+    researchInterests: [
+      "Information Technology Governance",
+      "Enterprise Architecture",
+      "Business Process Management",
+      "Quantitative Risk Assessment",
     ],
   },
 ];
@@ -167,7 +191,7 @@ const peopleId: Person[] = [
   {
     id: "person-6",
     name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
-    role: "Senior Researcher",
+    role: "Peneliti Penasihat",
     affiliation: "Fakultas Komputasi, Universiti Teknologi Malaysia",
     image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
     researchInterests: [
@@ -210,6 +234,30 @@ const peopleId: Person[] = [
     researchInterests: [
       "Manajemen Pengetahuan (Knowledge Management)",
       "Business Intelligence",
+    ],
+  },
+  {
+    id: "person-10",
+    name: "Bayu Adhi Tama, Ph.D.",
+    role: "Peneliti Penasihat",
+    affiliation: "Universitas Maryland Baltimore County",
+    image: "/images/people/Bayu-Adhi-Tama.jpeg",
+    researchInterests: [
+      "Penambangan Data Terapan",
+      "Sains Data",
+    ],
+  },
+  {
+    id: "person-11",
+    name: "Lovinta Happy Atrinawati, M.Eng.",
+    role: "Kolaborator Peneliti",
+    affiliation: "Kandidat Doktor di Universitas Negeri Florida",
+    image: "/images/people/Lovinta-Happy-Atrinawati.jpeg",
+    researchInterests: [
+      "Tata Kelola Teknologi Informasi",
+      "Arsitektur Perusahaan",
+      "Manajemen Proses Bisnis",
+      "Penilaian Risiko Kuantitatif",
     ],
   },
 ];
