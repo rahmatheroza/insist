@@ -3,18 +3,13 @@
 import { useTransition } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/routing";
-import { Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface LanguageSwitcherProps {
   className?: string;
-  variant?: "compact" | "full";
 }
 
-export function LanguageSwitcher({
-  className,
-  variant = "compact",
-}: LanguageSwitcherProps) {
+export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
