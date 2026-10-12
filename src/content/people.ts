@@ -118,9 +118,9 @@ const peopleEn: Person[] = [
   },
   {
     id: "person-11",
-    name: "Lovinta Happy Atrinawati, M.Eng.",
+    name: "Lovinta Happy Atrinawati, Ph.D.",
     role: "Research Collaborator",
-    affiliation: "Ph.D. Candidate at Florida State University, USA",
+    affiliation: "Institut Teknologi Kalimantan, Indonesia",
     image: "/images/people/Lovinta-Happy-Atrinawati.jpeg",
     researchInterests: [
       "Information Technology Governance",
@@ -281,7 +281,7 @@ const peopleId: Person[] = [
     id: "person-11",
     name: "Lovinta Happy Atrinawati, M.Eng.",
     role: "Kolaborator Peneliti",
-    affiliation: "Kandidat Doktor di Universitas Negeri Florida, USA",
+    affiliation: "Institut Teknologi Kalimantan, Indonesia",
     image: "/images/people/Lovinta-Happy-Atrinawati.jpeg",
     researchInterests: [
       "Tata Kelola Teknologi Informasi",
