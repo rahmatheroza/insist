@@ -44,7 +44,14 @@ export function getSiteConfig(locale?: string): SiteConfig {
 
 const navItemsEn: NavItem[] = [
   { label: "About", href: "/about" },
-  { label: "Research", href: "/research" },
+  {
+    label: "Research",
+    href: "/research",
+    children: [
+      { label: "Overview", href: "/research" },
+      { label: "Roadmap", href: "/research/roadmap" },
+    ],
+  },
   { label: "People", href: "/people" },
   { label: "Projects", href: "/projects" },
   { label: "Publications", href: "/publications" },
@@ -55,7 +62,14 @@ const navItemsEn: NavItem[] = [
 
 const navItemsId: NavItem[] = [
   { label: "Tentang", href: "/about" },
-  { label: "Riset", href: "/research" },
+  {
+    label: "Riset",
+    href: "/research",
+    children: [
+      { label: "Ringkasan", href: "/research" },
+      { label: "Roadmap", href: "/research/roadmap" },
+    ],
+  },
   { label: "Anggota", href: "/people" },
   { label: "Proyek", href: "/projects" },
   { label: "Publikasi", href: "/publications" },

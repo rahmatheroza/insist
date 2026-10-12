@@ -80,6 +80,11 @@
     "description": "Our research spans intelligent systems, sustainable IS, digital health, and more — united by a commitment to rigorous, impact-oriented inquiry.",
     "comingSoon": "Detailed research pages and project listings coming soon."
   },
+  "roadmapPage": {
+    "title": "Research Roadmap",
+    "description": "Our strategic research trajectory, long-term vision, and milestones in intelligent and sustainable information systems.",
+    "comingSoon": "Detailed research roadmap timeline, focus areas, and milestone agendas coming soon."
+  },
   "peoplePage": {
     "title": "People",
     "description": "Faculty researchers, graduate students, and alumni who form the INSIST research community.",
