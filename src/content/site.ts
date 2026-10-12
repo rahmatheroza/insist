@@ -3,7 +3,7 @@ import type { NavItem, SiteConfig } from "@/types";
 const baseSite = {
   name: "INSIST",
   university: "Universitas Sriwijaya",
-  email: "insistreserch@unsri.ac.id",
+  email: "info@insistresearch.org",
   logo: {
     src: "/images/logo_insist1.png",
     alt: "INSIST — Intelligent and Sustainable Information Systems",

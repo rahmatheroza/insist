@@ -27,9 +27,9 @@ export async function generateMetadata({
 
 const roleSectionsEn = [
   { role: "Head of Research Group", title: "Head of Research Group" },
-  { role: "Advisor Researcher", title: "Advisor Researchers" },
+  { role: "Research Advisor", title: "Research Advisors" },
   { role: "Researcher", title: "Researchers" },
-  { role: "Collaborator Researcher", title: "Collaborator Researchers" },
+  { role: "Research Collaborator", title: "Research Collaborators" },
 ];
 
 const roleSectionsId = [

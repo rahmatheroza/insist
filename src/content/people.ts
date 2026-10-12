@@ -60,7 +60,7 @@ const peopleEn: Person[] = [
   {
     id: "person-6",
     name: "Assoc. Prof. Dr. Ab Razak Che Hussin",
-    role: "Advisor Researcher",
+    role: "Research Advisor",
     affiliation: "Faculty of Computing, Universiti Teknologi Malaysia, Malaysia",
     image: "/images/people/Ab-Razak-Che-Hussin.jpeg",
     researchInterests: [
@@ -108,7 +108,7 @@ const peopleEn: Person[] = [
   {
     id: "person-10",
     name: "Bayu Adhi Tama, Ph.D.",
-    role: "Advisor Researcher",
+    role: "Research Advisor",
     affiliation: "University of Maryland Baltimore County, USA",
     image: "/images/people/Bayu-Adhi-Tama.jpeg",
     researchInterests: [
@@ -119,7 +119,7 @@ const peopleEn: Person[] = [
   {
     id: "person-11",
     name: "Lovinta Happy Atrinawati, M.Eng.",
-    role: "Collaborator Researcher",
+    role: "Research Collaborator",
     affiliation: "Ph.D. Candidate at Florida State University, USA",
     image: "/images/people/Lovinta-Happy-Atrinawati.jpeg",
     researchInterests: [
@@ -132,7 +132,7 @@ const peopleEn: Person[] = [
   {
     id: "person-12",
     name: "Dr. Emanuel Jando",
-    role: "Collaborator Researcher",
+    role: "Research Collaborator",
     affiliation: "Universitas Katolik Widya Mandira (UNWIRA), Kupang, NTT, Indonesia",
     image: "/images/people/Emanuel-Jando.jpeg",
     researchInterests: [
@@ -141,6 +141,22 @@ const peopleEn: Person[] = [
       "Information Systems & Decision Support Systems",
       "IT Governance",
       "Artificial Intelligence",
+    ],
+  },
+  {
+    id: "person-13",
+    name: "Dr. Haider Raza",
+    role: "Research Advisor",
+    affiliation: "School of Computer Science and Electronic Engineering, University of Essex, UK",
+    image: "/images/people/Haider-Raza.jpeg",
+    researchInterests: [
+      "Agentic AI",
+      "Generative AI",
+      "Explainable AI",
+      "Computer Vision",
+      "Domain Adaptation",
+      "Brain-Computer Interfaces",
+      "Intelligent Decision Support Systems",
     ],
   },
 ];
@@ -286,6 +302,22 @@ const peopleId: Person[] = [
       "Sistem Informasi & Sistem Pendukung Keputusan",
       "Tata Kelola Teknologi Informasi",
       "Kecerdasan Buatan",
+    ],
+  },
+  {
+    id: "person-13",
+    name: "Dr. Haider Raza",
+    role: "Peneliti Penasihat",
+    affiliation: "School of Computer Science and Electronic Engineering, University of Essex, UK",
+    image: "/images/people/Haider-Raza.jpeg",
+    researchInterests: [
+      "Agentic AI",
+      "Generative AI",
+      "Explainable AI",
+      "Computer Vision",
+      "Domain Adaptation",
+      "Brain-Computer Interfaces",
+      "Sistem Pendukung Keputusan Cerdas",
     ],
   },
 ];
