@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "about": "About",
+    "research": "Research",
+    "people": "People",
+    "projects": "Projects",
+    "publications": "Publications",
+    "news": "News",
+    "join": "Join",
+    "contact": "Contact",
+    "joinUs": "Join Us"
+  },
+  "site": {
+    "name": "INSIST",
+    "fullName": "Intelligent and Sustainable Information Systems Research Group",
+    "tagline": "Impact-driven Information Systems Research",
+    "description": "INSIST is a research community at Universitas Sriwijaya advancing intelligent and sustainable information systems through rigorous scholarship, interdisciplinary collaboration, and real-world impact.",
+    "university": "Universitas Sriwijaya",
+    "address": "Faculty of Computer Science, Universitas Sriwijaya, Palembang, Indonesia",
+    "copyright": "All rights reserved.",
+    "motto": "Built with rigor. Designed for impact."
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "contactUs": "Contact us",
+    "comingSoon": "Coming soon",
+    "navigate": "Navigate",
+    "connect": "Connect"
+  },
+  "home": {
+    "hero": {
+      "headline": "Intelligent & Sustainable Information Systems",
+      "subheadline": "Research that matters for society, industry, and the planet.",
+      "description": "We design, analyze, and deploy information systems that are intelligent by design and sustainable by principle — bridging academic rigor with practical impact across health, education, governance, and enterprise.",
+      "exploreResearch": "Explore Our Research",
+      "joinCommunity": "Join the Community"
+    },
+    "about": {
+      "title": "About INSIST",
+      "subtitle": "A research community built on curiosity, collaboration, and consequence."
+    },
+    "researchThemes": {
+      "title": "Research Themes",
+      "subtitle": "Six interconnected areas where we pursue rigorous, impact-oriented inquiry.",
+      "viewAll": "View all research"
+    },
+    "impactAreas": {
+      "title": "Impact & Engagement",
+      "subtitle": "How our research translates into measurable outcomes for society, industry, and academia."
+    },
+    "publications": {
+      "title": "Featured Publications",
+      "subtitle": "Selected recent work from INSIST researchers in leading venues.",
+      "viewAll": "All publications"
+    },
+    "news": {
+      "title": "Latest News & Updates",
+      "subtitle": "Recent activities, achievements, and announcements from our community.",
+      "viewAll": "All news"
+    },
+    "community": {
+      "title": "Our Community",
+      "subtitle": "INSIST brings together faculty researchers, graduate students, and alumni who share a commitment to rigorous, impact-oriented information systems research. We foster an open, collaborative culture where ideas are tested, refined, and shared."
+    },
+    "join": {
+      "title": "Join Our Research Community",
+      "subtitle": "We are always looking for passionate researchers, graduate students, and partners to collaborate on cutting-edge IS research.",
+      "exploreOpportunities": "Explore Opportunities",
+      "getInTouch": "Get in Touch"
+    }
+  },
+  "aboutPage": {
+    "title": "About INSIST",
+    "subtitle": "A research community built on curiosity, collaboration, and consequence.",
+    "comingSoon": "Full about page content coming soon."
+  },
+  "researchPage": {
+    "title": "Research",
+    "description": "Our research spans intelligent systems, sustainable IS, digital health, and more — united by a commitment to rigorous, impact-oriented inquiry.",
+    "comingSoon": "Detailed research pages and project listings coming soon."
+  },
+  "peoplePage": {
+    "title": "People",
+    "description": "Faculty researchers, graduate students, and alumni who form the INSIST research community.",
+    "researchInterests": "Research Interests"
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "description": "Applied and fundamental research projects spanning health informatics, green IT, smart infrastructure, and enterprise systems.",
+    "status": {
+      "active": "Active",
+      "ongoing": "Ongoing",
+      "completed": "Completed"
+    }
+  },
+  "publicationsPage": {
+    "title": "Publications",
+    "description": "Peer-reviewed journal articles, conference papers, and book chapters from INSIST researchers.",
+    "types": {
+      "journal": "Journal",
+      "conference": "Conference",
+      "bookChapter": "Book Chapter"
+    },
+    "comingSoon": "Full publication database with filtering and BibTeX export coming soon."
+  },
+  "newsPage": {
+    "title": "News",
+    "description": "Events, collaborations, achievements, and announcements from the INSIST community.",
+    "categories": {
+      "announcement": "Announcement",
+      "event": "Event",
+      "achievement": "Achievement",
+      "publication": "Publication"
+    },
+    "comingSoon": "Individual news articles and an archive will be added soon."
+  },
+  "joinPage": {
+    "title": "Join INSIST",
+    "description": "Whether you are a prospective graduate student, visiting researcher, or industry partner — we welcome collaborators who share our vision for intelligent and sustainable information systems.",
+    "ctaTitle": "Ready to get started?",
+    "ctaDesc": "Send us an email with your research interests, CV, and preferred collaboration type. Our faculty review applications on a rolling basis.",
+    "ctaBtn": "Contact INSIST"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "description": "Reach out for research collaborations, graduate program inquiries, media requests, or general questions.",
+    "getInTouch": "Get in Touch",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "formTitle": "Contact Form",
+    "formDesc": "A contact form with validation will be integrated here. For now, please email us directly at"
+  }
+}

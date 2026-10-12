@@ -1,13 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 
 import { Container } from "@/components/shared/container";
 import { SectionHeader } from "@/components/shared/section-header";
-import { aboutContent } from "@/content/about";
+import { getAboutContent } from "@/content/about";
 import type { SectionProps } from "@/types";
 
 export function AboutSection({ className }: SectionProps) {
+  const locale = useLocale();
+  const aboutContent = getAboutContent(locale);
+
   return (
     <section className={className} id="about">
       <Container as="section" className="py-24 lg:py-32">

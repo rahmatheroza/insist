@@ -1,12 +1,20 @@
-import Link from "next/link";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 import { Github, GraduationCap, Linkedin, Mail, MapPin } from "lucide-react";
 
+import { Link } from "@/i18n/routing";
 import { Container } from "@/components/shared/container";
 import { Logo } from "@/components/shared/logo";
 import { Separator } from "@/components/ui/separator";
-import { navItems, siteConfig } from "@/content/site";
+import { getNavItems, getSiteConfig } from "@/content/site";
 
 export function Footer() {
+  const locale = useLocale();
+  const tCommon = useTranslations("common");
+  const tSite = useTranslations("site");
+  const siteConfig = getSiteConfig(locale);
+  const navItems = getNavItems(locale);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -16,9 +24,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo imageClassName="h-16 sm:h-20" />
             <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.fullName} at {siteConfig.university}. Advancing
-              intelligent and sustainable information systems through research,
-              collaboration, and impact.
+              {siteConfig.fullName} at {siteConfig.university}. {siteConfig.description}
             </p>
             <div className="mt-6 flex flex-col gap-2 text-sm text-muted-foreground">
               <span className="inline-flex items-center gap-2">
@@ -38,7 +44,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Navigate</h3>
+            <h3 className="text-sm font-semibold text-foreground">
+              {tCommon("navigate")}
+            </h3>
             <ul className="mt-4 space-y-2.5">
               {navItems.map((item) => (
                 <li key={item.href}>
@@ -54,7 +62,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Connect</h3>
+            <h3 className="text-sm font-semibold text-foreground">
+              {tCommon("connect")}
+            </h3>
             <ul className="mt-4 space-y-2.5">
               {siteConfig.social.github && (
                 <li>
@@ -103,11 +113,10 @@ export function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            &copy; {currentYear} {siteConfig.name} &mdash; {siteConfig.university}.
-            All rights reserved.
+            &copy; {currentYear} {siteConfig.name} &mdash; {siteConfig.university}. {tSite("copyright")}
           </p>
           <p className="text-xs text-muted-foreground">
-            Built with rigor. Designed for impact.
+            {tSite("motto")}
           </p>
         </div>
       </Container>

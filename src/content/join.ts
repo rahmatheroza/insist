@@ -1,6 +1,6 @@
 import type { JoinContent } from "@/types";
 
-export const joinContent: JoinContent = {
+const joinContentEn: JoinContent = {
   title: "Join INSIST",
   description:
     "Whether you are a prospective graduate student, visiting researcher, or industry partner — we welcome collaborators who share our vision for intelligent and sustainable information systems.",
@@ -25,3 +25,35 @@ export const joinContent: JoinContent = {
     },
   ],
 };
+
+const joinContentId: JoinContent = {
+  title: "Bergabung dengan INSIST",
+  description:
+    "Baik Anda calon mahasiswa pascasarjana, peneliti tamu, maupun mitra industri — kami menyambut kolaborator yang memiliki visi serupa dalam memajukan sistem informasi cerdas dan berkelanjutan.",
+  opportunities: [
+    {
+      title: "Program Pascasarjana",
+      description:
+        "Raih gelar S2 atau S3 di bidang Sistem Informasi bersama dosen peneliti INSIST sebagai pembimbing. Topik riset mencakup seluruh bidang tema kami.",
+      href: "/join#graduate",
+    },
+    {
+      title: "Kolaborasi Riset",
+      description:
+        "Menulis publikasi ilmiah bersama, membimbing mahasiswa bersama, atau mengajukan proposal hibah riset gabungan bersama peneliti kami.",
+      href: "/join#collaboration",
+    },
+    {
+      title: "Kemitraan Industri",
+      description:
+        "Jalin kerja sama dengan INSIST untuk riset terapan, pembuatan purwarupa sistem, atau evaluasi kelayakan teknologi yang dirancang sesuai kebutuhan organisasi Anda.",
+      href: "/join#industry",
+    },
+  ],
+};
+
+export function getJoinContent(locale?: string): JoinContent {
+  return locale === "id" ? joinContentId : joinContentEn;
+}
+
+export const joinContent: JoinContent = joinContentEn;

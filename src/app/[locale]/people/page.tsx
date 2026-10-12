@@ -1,25 +1,51 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { User } from "lucide-react";
+import { setRequestLocale } from "next-intl/server";
 
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
-import { people } from "@/content/people";
-import { siteConfig } from "@/content/site";
+import { getPeople } from "@/content/people";
+import { getSiteConfig } from "@/content/site";
 import type { Person } from "@/types";
 
-export const metadata: Metadata = {
-  title: "People",
-  description: `Meet the faculty, students, and alumni of ${siteConfig.name}.`,
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const site = getSiteConfig(locale);
+  return {
+    title: locale === "id" ? "Anggota" : "People",
+    description:
+      locale === "id"
+        ? `Kenali dosen, mahasiswa, dan alumni dari ${site.name}.`
+        : `Meet the faculty, students, and alumni of ${site.name}.`,
+  };
+}
 
-const roleSections = [
+const roleSectionsEn = [
   { role: "Head of Research Group", title: "Head of Research Group" },
-  { role: "Senior Researcher", title: "Senior Researchers" },
+  { role: "Advisor Researcher", title: "Advisor Researchers" },
   { role: "Researcher", title: "Researchers" },
+  { role: "Collaborator Researcher", title: "Collaborator Researchers" },
 ];
 
-function PersonCard({ person }: { person: Person }) {
+const roleSectionsId = [
+  { role: "Head of Research Group", title: "Ketua Kelompok Riset" },
+  { role: "Peneliti Penasihat", title: "Peneliti Penasihat" },
+  { role: "Researcher", title: "Peneliti" },
+  { role: "Kolaborator Peneliti", title: "Kolaborator Peneliti" },
+];
+
+function PersonCard({
+  person,
+  interestsLabel,
+}: {
+  person: Person;
+  interestsLabel: string;
+}) {
   return (
     <article className="overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-primary/20">
       <div className="relative aspect-square bg-insist-gray-100">
@@ -47,7 +73,7 @@ function PersonCard({ person }: { person: Person }) {
         {person.researchInterests && person.researchInterests.length > 0 && (
           <div className="mt-3 border-t border-border pt-3">
             <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60">
-              Research Interests
+              {interestsLabel}
             </p>
             <div className="flex flex-wrap gap-1.5">
               {person.researchInterests.map((interest) => (
@@ -66,20 +92,35 @@ function PersonCard({ person }: { person: Person }) {
   );
 }
 
-export default function PeoplePage() {
+export default async function PeoplePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const peopleList = getPeople(locale);
+  const isId = locale === "id";
+
+  const roleSections = isId ? roleSectionsId : roleSectionsEn;
   const knownRoles = roleSections.map((s) => s.role);
-  const otherPeople = people.filter((p) => !knownRoles.includes(p.role));
+  const otherPeople = peopleList.filter((p) => !knownRoles.includes(p.role));
+  const interestsLabel = isId ? "Bidang Minat Riset" : "Research Interests";
 
   return (
     <>
       <PageHeader
-        title="People"
-        description="Faculty researchers, graduate students, and alumni who form the INSIST research community."
+        title={isId ? "Anggota" : "People"}
+        description={
+          isId
+            ? "Dosen peneliti, mahasiswa pascasarjana, dan alumni yang membentuk komunitas riset INSIST."
+            : "Faculty researchers, graduate students, and alumni who form the INSIST research community."
+        }
       />
       <Container className="py-16 lg:py-24">
         <div className="mx-auto max-w-6xl space-y-16">
           {roleSections.map((section) => {
-            const members = people.filter((p) => p.role === section.role);
+            const members = peopleList.filter((p) => p.role === section.role);
             if (members.length === 0) return null;
 
             return (
@@ -91,7 +132,11 @@ export default function PeoplePage() {
                 </div>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {members.map((person) => (
-                    <PersonCard key={person.id} person={person} />
+                    <PersonCard
+                      key={person.id}
+                      person={person}
+                      interestsLabel={interestsLabel}
+                    />
                   ))}
                 </div>
               </section>
@@ -102,12 +147,16 @@ export default function PeoplePage() {
             <section className="space-y-6">
               <div className="border-b border-border pb-3">
                 <h2 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
-                  Members
+                  {isId ? "Anggota" : "Members"}
                 </h2>
               </div>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {otherPeople.map((person) => (
-                  <PersonCard key={person.id} person={person} />
+                  <PersonCard
+                    key={person.id}
+                    person={person}
+                    interestsLabel={interestsLabel}
+                  />
                 ))}
               </div>
             </section>

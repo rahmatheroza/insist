@@ -1,6 +1,6 @@
 import type { AboutContent } from "@/types";
 
-export const aboutContent: AboutContent = {
+const aboutContentEn: AboutContent = {
   title: "About INSIST",
   subtitle: "A research community built on curiosity, collaboration, and consequence.",
   paragraphs: [
@@ -15,3 +15,25 @@ export const aboutContent: AboutContent = {
     { label: "Location", value: "Palembang, ID" },
   ],
 };
+
+const aboutContentId: AboutContent = {
+  title: "Tentang INSIST",
+  subtitle: "Komunitas riset yang berlandaskan rasa ingin tahu, kolaborasi, dan dampak nyata berkelanjutan.",
+  paragraphs: [
+    "INSIST (Intelligent and Sustainable Information Systems) adalah kelompok riset di Fakultas Ilmu Komputer, Universitas Sriwijaya. Kami meneliti bagaimana sistem informasi dapat dirancang agar cerdas — memanfaatkan data, kecerdasan buatan, dan analitik — sekaligus berkelanjutan — mempertimbangkan aspek lingkungan, sosial, dan ekonomi.",
+    "Karya riset kami mencakup landasan teoretis ilmu desain sistem informasi hingga penelitian terapan di bidang kesehatan digital, kota cerdas (smart cities), dan sistem enterprise. Kami mempublikasikan karya ilmiah di berbagai jurnal dan konferensi terkemuka serta menjalin kemitraan erat dengan industri dan institusi publik di Sumatera dan sekitarnya.",
+    "Kami meyakini bahwa keunggulan riset tidak hanya diukur dari sitasi, melainkan dari perubahan positif nyata yang dihadirkan bagi masyarakat, organisasi, dan kebijakan.",
+  ],
+  highlights: [
+    { label: "Didirikan", value: "2018" },
+    { label: "Fakultas", value: "Ilmu Komputer" },
+    { label: "Fokus", value: "SI & Keberlanjutan" },
+    { label: "Lokasi", value: "Palembang, ID" },
+  ],
+};
+
+export function getAboutContent(locale?: string): AboutContent {
+  return locale === "id" ? aboutContentId : aboutContentEn;
+}
+
+export const aboutContent: AboutContent = aboutContentEn;

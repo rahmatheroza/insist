@@ -1,31 +1,48 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/routing";
 import { Container } from "@/components/shared/container";
 import { LinkArrow } from "@/components/shared/link-arrow";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Badge } from "@/components/ui/badge";
-import { latestNews } from "@/content/news";
+import { getNews } from "@/content/news";
 import type { SectionProps } from "@/types";
 
-const categoryLabels = {
-  announcement: "Announcement",
-  event: "Event",
-  achievement: "Achievement",
-  publication: "Publication",
-} as const;
-
-function formatDate(dateString: string) {
-  return new Date(dateString).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
-
 export function LatestNewsSection({ className }: SectionProps) {
+  const locale = useLocale();
+  const t = useTranslations("home.news");
+  const tCat = useTranslations("newsPage.categories");
+  const latestNews = getNews(locale);
+
+  const getCategoryLabel = (cat: string) => {
+    switch (cat) {
+      case "announcement":
+        return tCat("announcement");
+      case "event":
+        return tCat("event");
+      case "achievement":
+        return tCat("achievement");
+      case "publication":
+        return tCat("publication");
+      default:
+        return cat;
+    }
+  };
+
+  const formatDate = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString(
+      locale === "id" ? "id-ID" : "en-US",
+      {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }
+    );
+  };
+
   return (
     <section
       className={`bg-insist-gray-50 ${className ?? ""}`}
@@ -34,12 +51,12 @@ export function LatestNewsSection({ className }: SectionProps) {
       <Container as="section" className="py-24 lg:py-32">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeader
-            title="Latest News"
-            subtitle="Updates from the INSIST community — events, collaborations, and milestones."
+            title={t("title")}
+            subtitle={t("subtitle")}
             className="mb-0"
           />
           <LinkArrow href="/news" className="shrink-0 pb-1">
-            All news
+            {t("viewAll")}
           </LinkArrow>
         </div>
 
@@ -58,7 +75,7 @@ export function LatestNewsSection({ className }: SectionProps) {
               >
                 <div className="flex items-center gap-3">
                   <Badge variant="secondary">
-                    {categoryLabels[item.category]}
+                    {getCategoryLabel(item.category)}
                   </Badge>
                   <time
                     dateTime={item.date}

@@ -1,15 +1,19 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 
+import { Link } from "@/i18n/routing";
 import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
-import { joinContent } from "@/content/join";
+import { getJoinContent } from "@/content/join";
 import type { SectionProps } from "@/types";
 
 export function JoinSection({ className }: SectionProps) {
+  const locale = useLocale();
+  const joinContent = getJoinContent(locale);
+
   return (
     <section
       className={`border-t border-border bg-primary text-primary-foreground ${className ?? ""}`}
@@ -49,7 +53,7 @@ export function JoinSection({ className }: SectionProps) {
                 href={opportunity.href}
                 className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary-foreground/90 transition-colors hover:text-primary-foreground"
               >
-                Learn more
+                {locale === "id" ? "Pelajari lebih lanjut" : "Learn more"}
                 <ArrowRight className="size-4" />
               </Link>
             </motion.div>
@@ -63,7 +67,9 @@ export function JoinSection({ className }: SectionProps) {
             variant="secondary"
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
           >
-            <Link href="/join">Get Started</Link>
+            <Link href="/join">
+              {locale === "id" ? "Mulai Sekarang" : "Get Started"}
+            </Link>
           </Button>
         </div>
       </Container>
