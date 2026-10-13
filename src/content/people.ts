@@ -159,6 +159,21 @@ const peopleEn: Person[] = [
       "Intelligent Decision Support Systems",
     ],
   },
+  {
+    id: "person-14",
+    name: "Dr Ahmed Mamdouh",
+    role: "Research Collaborator",
+    affiliation: "Malomatia, Doha, Qatar",
+    image: "/images/people/Ahmed-Mamdouh.jpeg",
+    researchInterests: [
+      "Artificial Intelligence & Intelligent Automation",
+      "Digital Transformation",
+      "Enterprise HR Technology",
+      "SAP & Enterprise Platforms",
+      "Program & Portfolio Leadership",
+      "Leadership & the Future of Work",
+    ],
+  },
 ];
 
 const peopleId: Person[] = [
@@ -318,6 +333,21 @@ const peopleId: Person[] = [
       "Domain Adaptation",
       "Brain-Computer Interfaces",
       "Sistem Pendukung Keputusan Cerdas",
+    ],
+  },
+  {
+    id: "person-14",
+    name: "Dr Ahmed Mamdouh",
+    role: "kolaborator Peneliti",
+    affiliation: "Malomatia, Doha, Qatar",
+    image: "/images/people/Ahmed-Mamdouh.jpeg",
+    researchInterests: [
+      "Artificial Intelligence & Intelligent Automation",
+      "Digital Transformation",
+      "Enterprise HR Technology",
+      "SAP & Enterprise Platforms",
+      "Program & Portfolio Leadership",
+      "Leadership & the Future of Work",
     ],
   },
 ];
