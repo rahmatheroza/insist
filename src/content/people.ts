@@ -338,7 +338,7 @@ const peopleId: Person[] = [
   {
     id: "person-14",
     name: "Dr Ahmed Mamdouh",
-    role: "kolaborator Peneliti",
+    role: "Kolaborator Peneliti",
     affiliation: "Malomatia, Doha, Qatar",
     image: "/images/people/Ahmed-Mamdouh.jpeg",
     researchInterests: [
