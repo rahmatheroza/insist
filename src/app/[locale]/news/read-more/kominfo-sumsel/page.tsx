@@ -155,6 +155,23 @@ export default async function KominfoSumselPage({
                   seperti Badan Riset dan Inovasi Daerah (BRIDA) dilibatkan, agar jaringan kerja sama lebih luas ke
                   depannya, dengan mengikutsertakan peneliti dari pihak lain.
                 </p>
+
+                <p>
+                  Dalam penjelasannya, Dinas Kominfo Provinsi Sumsel menyebut perannya bersifat koordinasi,
+                  banyak aplikasi berada di tingkat kota atau kabupaten, namun data dan informasi yang tersedia dikoordinasikan oleh 
+                  pihak Provinsi.
+                </p>
+
+                <p>
+                  Sebagai bentuk tidak lanjut dari inisiasi ini, Dinas Kominfo Provinsi Sumsel akan melakukan audiensi formal, 
+                  yaitu mempertemukan Perwakilan INSIST dengan jajaran pimpinan Dinas Kominfo Provinsi Sumatera Selatan 
+                  (Kepala Dinas, Sekretaris Dinas, Kabid yang terkait), dengan terlebih dahulu menunggu surat permohonan dan usulan proposal 
+                  kerjasama yang diajukan oleh INSIST.
+                </p>
+
+                <p>
+                  Tim Media dan Komunikasi INSIST.
+                </p>
               </>
             ) : (
               <>
@@ -201,6 +218,23 @@ export default async function KominfoSumselPage({
                   also suggested involving other Regional Government Organizations such as the Regional Research and
                   Innovation Agency (BRIDA) in order to broaden the collaborative network going forward, by including
                   researchers from other institutions.
+                </p>
+
+                <p>
+                  In its explanation, the Communication and Informatics (Kominfo) Office of South Sumatra Province noted that its role is primarily coordinative
+                  — many applications are managed at the city or district level, while data and information are
+                  coordinated at the provincial level.
+                </p>
+
+                <p>
+                  As a follow-up to this initiative, the Communication and Informatics (Kominfo) Office of South Sumatra Province will arrange a formal audience,
+                  bringing INSIST representatives together with the senior leadership of the Communication and Informatics (Kominfo) Office of South Sumatra Province (including the Head of Office, Office Secretary, and relevant
+                  Division Heads), pending receipt of a formal request letter and collaboration proposal submitted
+                  by INSIST.
+                </p>
+
+                <p>
+                  INSIST Media and Communications Team.
                 </p>
               </>
             )}
