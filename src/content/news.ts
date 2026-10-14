@@ -2,6 +2,15 @@ import type { NewsItem } from "@/types";
 
 const newsEn: NewsItem[] = [
   {
+    id: "news-kominfo-sumsel",
+    title: "INSIST Explores Collaboration with Kominfo South Sumatra Province",
+    excerpt:
+      "INSIST representatives met with the South Sumatra Provincial Communication and Informatics Office to discuss potential collaboration in addressing regional challenges through Intelligent and Sustainable Information Systems.",
+    date: "2026-10-13",
+    category: "announcement",
+    href: "/news/read-more/kominfo-sumsel",
+  },
+  {
     id: "news-1",
     title: "INSIST Researchers Present at PACIS 2025 in Bali",
     excerpt:
@@ -31,6 +40,15 @@ const newsEn: NewsItem[] = [
 ];
 
 const newsId: NewsItem[] = [
+  {
+    id: "news-kominfo-sumsel",
+    title: "INSIST Jajaki Kolaborasi dengan Kominfo Provinsi Sumatera Selatan",
+    excerpt:
+      "Perwakilan INSIST berdiskusi dengan Dinas Komunikasi dan Informatika Provinsi Sumatera Selatan mengenai kemungkinan kolaborasi dalam menyelesaikan permasalahan daerah melalui kepakaran Sistem Informasi Cerdas dan Berkelanjutan.",
+    date: "2026-10-13",
+    category: "announcement",
+    href: "/news/read-more/kominfo-sumsel",
+  },
   {
     id: "news-1",
     title: "Peneliti INSIST Mempresentasikan Makalah di PACIS 2025 Bali",
